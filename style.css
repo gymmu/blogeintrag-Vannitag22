@@ -6,8 +6,8 @@
 #box {
   background-color: cyan;
   border: 2px solid black;
-  margin: 50px;
-  padding: 10px;
+  margin: 60px;
+  padding: 20px;
   width: 300px;
   height: 70px;
 }
@@ -42,4 +42,9 @@ body {
 transition: all 1s ease-in-out;}
 .rotate:hover {
   transform: rotate(180deg)
+}
+
+
+a:visited {
+  color:blue;
 }
