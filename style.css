@@ -4,12 +4,25 @@
   box-sizing: content-box;
 }
 #box {
-  background-color: cyan;
+  background-color:white;
   border: 2px solid black;
   margin: 60px;
-  padding: 20px;
-  width: 300px;
-  height: 70px;
+  padding: 10px;
+  width: 400px;
+  height: 10 0px;
+}
+
+.element-with-background {
+  height: 160px;
+  background-image: url("https://w0.peakpx.com/wallpaper/838/594/HD-wallpaper-toothless-eye-dragon-how-to-train-your-dragon.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
@@ -30,7 +43,7 @@ body {
 }
 
 .scale {
-  animation: scale-anim 1s both ease-in-out infinite alternate;
+  animation: scale-anim 3s both ease-in-out infinite alternate;
 }
 
 @keyframes scale-anim {
