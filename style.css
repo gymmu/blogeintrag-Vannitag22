@@ -3,6 +3,14 @@
 *::after {
   box-sizing: content-box;
 }
+#box {
+  background-color: cyan;
+  border: 2px solid black;
+  margin: 50px;
+  padding: 10px;
+  width: 300px;
+  height: 70px;
+}
 
 h1 {
   text-align: center;
@@ -12,4 +20,26 @@ body {
   margin: 0;
   background-color: rgb(255, 202, 164);
   font-family: sans-serif;
+}
+
+.spread {
+  transition: all 1s ease-in-out;
+}
+.spread:hover {
+  letter-spacing: 1rem;
+}
+
+.scale {
+  animation: scale-anim 1s both ease-in-out infinite alternate;
+}
+
+@keyframes scale-anim {
+  from {transform: scale(1)}
+  to {transform: scale(1.5)}
+}
+
+.rotate {
+transition: all 1s ease-in-out;}
+.rotate:hover {
+  transform: rotate(180deg)
 }
