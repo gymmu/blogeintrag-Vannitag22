@@ -9,7 +9,7 @@
   margin: 80px;
   padding: 5px;
   width: 200px;
-  height: 170px;
+  height: 180px;
 }
 
 #box2 {
@@ -19,6 +19,14 @@
   padding: 20px;
   width: 400px;
   height: 150px;
+}
+
+body {
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/347/867/684/concept-art-landscape-animated-movies-dragon-wallpaper-preview.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .element-with-background {
@@ -43,6 +51,11 @@ body {
   font-family: sans-serif;
 }
 
+a {
+  color:black;
+  text-decoration: none;
+}
+
 .spread {
   transition: all 1s ease-in-out;
 }
@@ -60,15 +73,9 @@ body {
 }
 
 .rotate {
-transition: all 1s ease-in-out;}
+  transition: all 1s ease-in-out;}
 .rotate:hover {
   transform: rotate(180deg)
-}
-
-
-a {
-  color:black;
-  text-decoration: none;
 }
 
 /* Erstellt einen Container mit 2 Elementen nebeneinander. */
@@ -83,13 +90,5 @@ a {
   border: 1px solid  black;
   background-color: white;
   padding: 1rem 2rem;
-}
-
-
-body {
-  background-image: url("https://c4.wallpaperflare.com/wallpaper/347/867/684/concept-art-landscape-animated-movies-dragon-wallpaper-preview.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
+  margin-left: 5%
 }
