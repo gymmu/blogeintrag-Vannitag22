@@ -40,7 +40,6 @@ h1 {
 
 body {
   margin: 0;
-  background-color: rgb(255, 202, 164);
   font-family: sans-serif;
 }
 
@@ -57,7 +56,7 @@ body {
 
 @keyframes scale-anim {
   from {transform: scale(1)}
-  to {transform: scale(1.5)}
+  to {transform: scale(1.2)}
 }
 
 .rotate {
@@ -75,12 +74,22 @@ a {
 /* Erstellt einen Container mit 2 Elementen nebeneinander. */
 .text-next-to-img {
   display: grid;
-  grid-template-columns: 70% auto; /* gibt an wie der Platz aufgeteilt wird. */
+  grid-template-columns: 60% auto; /* gibt an wie der Platz aufgeteilt wird. */
   gap: 1rem; /* Gibt an wie viel Platz zwischen den Elementen ist. */
 }
 
 /* Gibt Stiele für den Textblock an. */
 .text-next-to-img > .text {
-  border: 1px solid  rgb(255, 202, 164);
+  border: 1px solid  black;
+  background-color: white;
   padding: 1rem 2rem;
+}
+
+
+body {
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/347/867/684/concept-art-landscape-animated-movies-dragon-wallpaper-preview.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
