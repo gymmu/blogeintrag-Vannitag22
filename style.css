@@ -3,9 +3,92 @@
 *::after {
   box-sizing: content-box;
 }
+#box {
+  background-color:white;
+  border: 5px solid black;
+  margin: 80px;
+  padding: 5px;
+  width: 200px;
+  height: 180px;
+}
+
+#box2 {
+  background-color:white;
+  border: 10px solid black;
+  margin: 40px;
+  padding: 20px;
+  width: 400px;
+  height: 150px;
+}
+
+body {
+  background-image: url("https://c4.wallpaperflare.com/wallpaper/347/867/684/concept-art-landscape-animated-movies-dragon-wallpaper-preview.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.element-with-background {
+  height: 160px;
+  background-image: url("https://w0.peakpx.com/wallpaper/838/594/HD-wallpaper-toothless-eye-dragon-how-to-train-your-dragon.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+}
 
 body {
   margin: 0;
-  background-color: lightgray;
   font-family: sans-serif;
+}
+
+a {
+  color:black;
+  text-decoration: none;
+}
+
+.spread {
+  transition: all 1s ease-in-out;
+}
+.spread:hover {
+  letter-spacing: 1rem;
+}
+
+.scale {
+  animation: scale-anim 3s both ease-in-out infinite alternate;
+}
+
+@keyframes scale-anim {
+  from {transform: scale(1)}
+  to {transform: scale(1.2)}
+}
+
+.rotate {
+  transition: all 1s ease-in-out;}
+.rotate:hover {
+  transform: rotate(180deg)
+}
+
+/* Erstellt einen Container mit 2 Elementen nebeneinander. */
+.text-next-to-img {
+  display: grid;
+  grid-template-columns: 60% auto; /* gibt an wie der Platz aufgeteilt wird. */
+  gap: 1rem; /* Gibt an wie viel Platz zwischen den Elementen ist. */
+}
+
+/* Gibt Stiele für den Textblock an. */
+.text-next-to-img > .text {
+  border: 1px solid  black;
+  background-color: white;
+  padding: 1rem 2rem;
+  margin-left: 5%
 }
